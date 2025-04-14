@@ -40,3 +40,27 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Task**: Criar o arquivo `CHANGELOG.md` com suporte a versionamento semântico e anotações detalhadas por commit.
 - **Action**: Criado `CHANGELOG.md` com estrutura baseada no método STAR (Situation, Task, Action, Result) e primeira versão documentada (`1.0.0`, `1.1.0`).
 - **Result**: Base sólida para rastreamento transparente das decisões técnicas e das etapas do desenvolvimento.
+
+---
+
+## [1.3.0]
+
+### meta: acknowledge pre-existing solution structure
+
+- **Situation**: A estrutura da solução (`.sln`) e os projetos das questões já estavam presentes na entrega original.
+- **Task**: Verificar e validar que todos os projetos estavam corretamente adicionados e prontos para compilação.
+- **Action**: Confirmada presença dos projetos Questao1, Questao2, Questao5; Questao3 e Questao4 possuem apenas enunciados por enquanto.
+- **Result**: Solução reconhecida como funcional e pronta para evolução incremental por questão. Nenhuma ação necessária neste commit.
+
+---
+
+## [1.4.0]
+
+### test: add shared test infrastructure with xUnit and FluentAssertions
+
+- **Situation**: Os projetos das questões ainda não tinham testes automatizados, o que comprometeria a validabilidade incremental das soluções.
+- **Task**: Criar uma infraestrutura de testes reutilizável, simples e eficaz para as questões que envolvem lógica.
+- **Action**: Criado projeto `Tests`, com pacotes `xUnit` e `FluentAssertions`. Incluído teste de exemplo e referência a projetos `Questao1` e `Questao2`.
+- **Result**: Ambiente de testes estabelecido, permitindo TDD e verificação contínua das entregas sem esforço adicional.
+
+---
