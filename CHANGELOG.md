@@ -64,3 +64,14 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: Ambiente de testes estabelecido, permitindo TDD e verificação contínua das entregas sem esforço adicional.
 
 ---
+
+## [1.5.0] - 2025-04-13
+
+### feat: implement Questão 1 - regras de conta bancária com testes
+
+- **Situation**: A primeira questão do teste técnico solicita a implementação de uma classe `ContaBancaria` com regras básicas de depósito e saque.
+- **Task**: Implementar a lógica solicitada e garantir cobertura por testes unitários, respeitando encapsulamento e boas práticas.
+- **Action**: Criada a classe `ContaBancaria` com métodos `Depositar`, `Sacar` e propriedade `Saldo`. Implementados testes em `Tests/ContaBancariaTests.cs` cobrindo os principais fluxos.
+- **Result**: Questão 1 implementada com sucesso e cobertura de testes garantindo confiabilidade e validabilidade da lógica.
+
+---

@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\AilosGFT\\",
+  "WorkspaceRootPath": "D:\\Projects\\GFTAilosTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|d:\\projects\\ailosgft\\questao1\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao1\\contabancariatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao1\\contabancariatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|d:\\projects\\gftailostest\\questao1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|solutionrelative:questao1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|d:\\projects\\gftailostest\\questao1\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|solutionrelative:questao1\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,12 +43,90 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:40:41.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Questao5",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
+              "RelativeDocumentMoniker": "Questao5\\Questao5.csproj",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
+              "RelativeToolTip": "Questao5\\Questao5.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T01:52:48.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Exercicio.Tests",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Exercicio.Tests.csproj",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
+              "RelativeToolTip": "Exercicio.Tests\\Exercicio.Tests.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T01:48:33.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ContaBancariaTests.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:44:38.242Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao1\\Program.cs",
+              "RelativeDocumentMoniker": "Questao1\\Program.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao1\\Program.cs",
+              "RelativeToolTip": "Questao1\\Program.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAkwC0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:41:43.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\UnitTest1.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "Exercicio.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:14:51.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ContaBancaria.cs",
-              "DocumentMoniker": "D:\\Projects\\AilosGFT\\Questao1\\ContaBancaria.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao1\\ContaBancaria.cs",
               "RelativeDocumentMoniker": "Questao1\\ContaBancaria.cs",
-              "ToolTip": "D:\\Projects\\AilosGFT\\Questao1\\ContaBancaria.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao1\\ContaBancaria.cs",
               "RelativeToolTip": "Questao1\\ContaBancaria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAIwCEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T20:20:32.187Z",
               "EditorCaption": ""
