@@ -268,3 +268,13 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 
 ---
 
+## [1.16.0]
+
+### docs: finaliza README principal e vincula documentação detalhada da Questão 5
+
+- **Situation**: A solução já contava com um `README.md` técnico geral e um `README.md` completo para a Questão 5, mas faltava conectá-los de forma estruturada.
+- **Task**: Atualizar o `README` principal para orientar o leitor sobre como acessar os detalhes da API da Questão 5, mantendo a documentação modular e organizada.
+- **Action**: Adicionada uma nova seção “📂 Detalhamento das Questões” no `README.md` principal com link direto para `Questao5/README.md`.
+- **Result**: Estrutura de documentação finalizada, com orientação clara sobre como executar, testar e consultar cada projeto da solução. Pronto para entrega técnica.
+
+---
