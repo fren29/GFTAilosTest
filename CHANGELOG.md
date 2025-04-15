@@ -150,3 +150,17 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Task**: Investigar e ajustar os critérios de `match` no `HttpClientMockHelper`, garantindo que cada URL requisitada pelo serviço tenha um mock correspondente.
 - **Action**: Corrigidos os valores de `match` em `GolsPorTimeServiceData` para incluir múltiplos parâmetros como `team1=...&page=1`. Adicionado log no fallback para facilitar o diagnóstico. Confirmado que todos os testes invocam URLs que agora são corretamente interceptadas.
 - **Result**: Todos os testes passaram com sucesso. O ambiente de testes agora reflete com precisão os comportamentos esperados da API, incluindo paginação e múltiplas entradas por lado da partida.
+
+---
+
+## [1.7.0]
+
+### feat: resolve Questão 3 simulando estado final de arquivos após comandos Git
+
+- **Situation**: A Questão 3 propunha uma sequência de comandos Git, incluindo criação e exclusão de arquivos, commits em diferentes branches e alternância entre elas.
+- **Task**: Identificar corretamente quais arquivos permanecem no diretório de trabalho da branch `master` ao final da sequência, além do `README.md`.
+- **Action**: Analisada a sequência de comandos passo a passo, removendo o `default.html` no commit 2 e mantendo `style.css` em `master`. O arquivo `script.js`, criado na branch `testing`, não aparece ao voltar para `master`. A análise foi testada usando comandos `echo` no terminal para simular os efeitos.
+- **Result**: Determinada com precisão que o único arquivo restante (além do `README.md`) é `style.css`. Questão 3 finalizada com confiança e validada via terminal.
+
+
+---
