@@ -64,3 +64,217 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: Ambiente de testes estabelecido, permitindo TDD e verificação contínua das entregas sem esforço adicional.
 
 ---
+
+## [1.5.0]
+
+### feat: implement Questão 1 - regras de conta bancária com testes
+
+- **Situation**: A primeira questão do teste técnico solicita a implementação de uma classe `ContaBancaria` com regras básicas de depósito e saque.
+- **Task**: Implementar a lógica solicitada e garantir cobertura por testes unitários, respeitando encapsulamento e boas práticas.
+- **Action**: Criada a classe `ContaBancaria` com métodos `Depositar`, `Sacar` e propriedade `Saldo`. Implementados testes em `Tests/ContaBancariaTests.cs` cobrindo os principais fluxos.
+- **Result**: Questão 1 implementada com sucesso e cobertura de testes garantindo confiabilidade e validabilidade da lógica.
+
+---
+
+## [1.5.1]
+
+### refactor: remove testing dependencies from Questao5 and centralize tests
+
+- **Situation**: O projeto `Questao5` havia sido entregue com dependências de teste (xUnit, Moq, coverlet, etc.) e implementações internas de testes.
+- **Task**: Eliminar possíveis conflitos e centralizar todos os testes no projeto `Exercicio.Tests`, seguindo boas práticas e simplificando o ambiente de build e execução.
+- **Action**: Removidas do `Questao5.csproj` todas as dependências de teste. Projeto passou a conter apenas código de produção, com testes realizados exclusivamente via `Exercicio.Tests`.
+- **Result**: Ambiente mais estável, limpo e compatível com a abordagem centralizada adotada para os testes das demais questões.
+
+---
+
+## [1.5.2]
+
+### chore: organiza estrutura inicial de testes para a Questão 2
+
+- **Situation**: Era necessário iniciar os testes da Questão 2 com uma estrutura de mocks reutilizável e separada.
+- **Task**: Criar a base de testes com isolamento e simulação de chamadas HTTP.
+- **Action**: Criado o projeto `Exercicio.Tests`, o helper `HttpClientMockFootballHelper`, e testes básicos com dados mockados.
+- **Result**: Estrutura de testes pronta para evoluir com mocks reutilizáveis, permitindo foco em lógica de negócios.
+
+---
+
+## [1.6.0]
+
+### feat: implementa o serviço `GolsPorTimeService` e testes principais da Questão 2
+
+- **Situation**: A Questão 2 exige chamadas HTTP para uma API paginada, com o cálculo total de gols por time e ano.
+- **Task**: Implementar o serviço responsável por consumir a API e somar corretamente os gols.
+- **Action**: Criado o `GolsPorTimeService` com controle de paginação, DTOs (`MatchApiResponse`, `MatchDatum`) e testes com dados mockados.
+- **Result**: Serviço funcional com cobertura de testes representando partidas simples e paginadas.
+
+---
+
+## [1.6.1]
+
+### refactor: reorganiza mocks em arquivos parciais para facilitar manutenção
+
+- **Situation**: O arquivo de mocks `GolsPorTimeServiceData` estava crescendo e se tornando difícil de manter.
+- **Task**: Dividir a lógica de mocks em arquivos parciais sem perder a centralização.
+- **Action**: Separado em `Pagination`, `Sides`, `Errors` e `Main`, com o método `Json(...)` centralizado no arquivo base.
+- **Result**: Código de mocks mais modular, limpo e com responsabilidades separadas.
+
+---
+
+## [1.6.2]
+
+### chore: adiciona fallback genérico no mock de HttpClient
+
+- **Situation**: Algumas URLs requisitadas durante os testes não estavam sendo interceptadas corretamente pelos mocks, causando falhas silenciosas.
+- **Task**: Garantir que qualquer requisição inesperada seja tratada com uma resposta segura.
+- **Action**: Adicionado fallback com `ItExpr.IsAny<HttpRequestMessage>()` no `HttpClientMockHelper.Create(...)`, retornando resposta vazia controlada.
+- **Result**: Testes mais estáveis, com comportamento previsível mesmo para cenários não explicitamente mapeados.
+
+---
+
+## [1.6.3]
+
+### refactor: reestrutura testes da Questão 2 para refletir o comportamento real do serviço
+
+- **Situation**: Os testes antigos consideravam apenas um lado das partidas (`team1` ou `team2`), o que não refletia o comportamento completo do `GolsPorTimeService`.
+- **Task**: Refatorar os testes para considerar corretamente ambas as chamadas da API (`team1` e `team2`) e o sistema de paginação.
+- **Action**: Atualizados todos os testes para usar mocks de ambos os lados, reorganizados para utilizar exclusivamente os métodos de `GolsPorTimeServiceData`.
+- **Result**: Cobertura de testes realista, alinhada com a lógica de produção e mais robusta para simular os diferentes cenários da API.
+
+---
+
+## [1.6.4]
+
+### test: corrige matching de URLs nos mocks e estabiliza execução de testes
+
+- **Situation**: Mesmo com a estrutura de testes ajustada, todas as chamadas HTTP estavam caindo no fallback genérico, retornando dados vazios e falhando nos testes.
+- **Task**: Investigar e ajustar os critérios de `match` no `HttpClientMockHelper`, garantindo que cada URL requisitada pelo serviço tenha um mock correspondente.
+- **Action**: Corrigidos os valores de `match` em `GolsPorTimeServiceData` para incluir múltiplos parâmetros como `team1=...&page=1`. Adicionado log no fallback para facilitar o diagnóstico. Confirmado que todos os testes invocam URLs que agora são corretamente interceptadas.
+- **Result**: Todos os testes passaram com sucesso. O ambiente de testes agora reflete com precisão os comportamentos esperados da API, incluindo paginação e múltiplas entradas por lado da partida.
+
+---
+
+## [1.7.0]
+
+### feat: resolve Questão 3 simulando estado final de arquivos após comandos Git
+
+- **Situation**: A Questão 3 propunha uma sequência de comandos Git, incluindo criação e exclusão de arquivos, commits em diferentes branches e alternância entre elas.
+- **Task**: Identificar corretamente quais arquivos permanecem no diretório de trabalho da branch `master` ao final da sequência, além do `README.md`.
+- **Action**: Analisada a sequência de comandos passo a passo, removendo o `default.html` no commit 2 e mantendo `style.css` em `master`. O arquivo `script.js`, criado na branch `testing`, não aparece ao voltar para `master`. A análise foi testada usando comandos `echo` no terminal para simular os efeitos.
+- **Result**: Determinada com precisão que o único arquivo restante (além do `README.md`) é `style.css`. Questão 3 finalizada com confiança e validada via terminal.
+
+---
+
+## [1.8.0]
+
+### feat: implementa consulta SQL da Questão 4 para agrupar e filtrar atendimentos
+
+- **Situation**: A Questão 4 exige uma consulta SQL que agrupe os atendimentos por assunto e ano, contabilize as ocorrências e filtre somente os que têm mais de 3 registros por ano.
+- **Task**: Construir um `SELECT` com `GROUP BY`, `HAVING` e `ORDER BY` para trazer apenas as combinações válidas ordenadas por ano e quantidade de forma decrescente.
+- **Action**: Criada a query com `COUNT(*)`, agrupamento por `ASSUNTO` e `ANO`, cláusula `HAVING COUNT(*) > 3` e ordenação por `ANO DESC, QUANTIDADE DESC`. A consulta foi validada com os dados fornecidos e retorna exatamente os registros esperados.
+- **Result**: Consulta implementada com sucesso, entregando o resultado esperado com performance e clareza sintática.
+
+---
+
+## [1.9.0]
+
+### feat: implementa movimentação de conta com validações e idempotência
+
+- **Situation**: A empresa solicitou a criação de um serviço REST para registrar movimentações (crédito e débito) em contas correntes já existentes, com suporte à idempotência e validações de negócio.
+- **Task**: Implementar um endpoint POST capaz de receber um comando de movimentação, validar os dados conforme as regras fornecidas e persistir o movimento no banco SQLite.
+- **Action**: Criado `MovimentarContaCommand` e `MovimentarContaHandler` seguindo o padrão CQRS. Foram implementadas as validações: conta existente, ativa, valor positivo e tipo válido. Adicionado controle de idempotência com registro de requisições únicas. Endpoint implementado em `ContaCorrenteController` via Minimal API convertida para `Controller`.
+- **Result**: Serviço de movimentação funcional com controle de duplicidade, pronto para integração com o app da empresa. Arquitetura segue o padrão utilizado pela organização (CQRS + Dapper + Controller).
+
+---
+
+## [1.10.0]
+
+### feat: implementa consulta de saldo com validações e agregação por movimentos
+
+- **Situation**: A empresa solicitou a criação de um endpoint para consulta de saldo da conta corrente, baseado nas movimentações de crédito e débito previamente registradas.
+- **Task**: Implementar um endpoint GET que recebe a identificação da conta corrente, valida as regras de negócio, calcula o saldo e retorna os dados do titular e o valor atual.
+- **Action**: Criados `ConsultarSaldoQuery` e `ConsultarSaldoHandler` seguindo o padrão CQRS. O handler valida se a conta existe e está ativa, busca as somas de créditos e débitos via Dapper e retorna o saldo. Foi adicionado o endpoint `GET /contacorrente/saldo/{id}` no `ContaCorrenteController`.
+- **Result**: Serviço funcional que retorna saldo atualizado com base nas movimentações, incluindo nome do titular e data/hora da consulta. Endpoint devidamente validado com mensagens de erro específicas.
+
+---
+
+## [1.11.0]
+
+### test: estabiliza e corrige testes de movimentação e saldo de contas
+
+- **Situation**: Durante a execução dos testes unitários, surgiam falhas causadas por uso incorreto do banco SQLite em memória. Os testes duplicavam schema, não reutilizavam conexões e quebravam por ausência de tabelas.
+- **Task**: Corrigir o uso do banco em memória, evitar duplicidade de classes, remover ambiguidades e garantir que o schema esteja sempre ativo durante os testes.
+- **Action**: 
+  - Criado método `InitializeDatabaseWithSchemaAndKeepOpen` no helper.
+  - Atualizados os testes para manter uma única conexão viva durante a execução.
+  - Removidas duplicidades de classes e conflitos de nomes nos testes.
+  - Reorganizados arquivos para seguir boas práticas de Clean Code.
+- **Result**: Todos os testes executam com sucesso, usando uma base de dados consistente e reaproveitada. A cobertura reflete corretamente os comportamentos esperados da aplicação.
+
+---
+
+## [1.12.0]
+
+### docs: completa documentação Swagger com exemplos, validações e mapeamentos
+
+- **Situation**: O projeto já contava com Swagger habilitado, mas a documentação dos endpoints estava incompleta, sem descrições, exemplos, ou mapeamentos formais de retorno e erros.
+- **Task**: Aprimorar a documentação para tornar os endpoints mais compreensíveis e utilizáveis por consumidores externos, seguindo boas práticas exigidas pela empresa.
+- **Action**:
+  - Adicionados `[SwaggerSchema]` e `[Required]` nos DTOs `MovimentarContaCommand`, `MovimentarContaResult` e `ConsultarSaldoResult`.
+  - Inseridas validações com `Range`, `RegularExpression` e mensagens de erro personalizadas nos inputs.
+  - Adicionados `[ProducesResponseType]` para mapear corretamente status 200 e 400.
+  - Acrescentados `summary` e `description` com `[SwaggerOperation]` nos endpoints.
+- **Result**: A documentação Swagger agora apresenta parâmetros com validações visuais, exemplos claros de uso e estrutura de resposta esperada, tornando a API mais confiável e profissional para terceiros.
+
+---
+
+## [1.13.0] (skipped)
+
+### skipped: testes de integração planejados, mas omitidos por estratégia de entrega
+
+- **Situation**: A entrega estava em fase final e o prazo apertado inviabilizou a adição de testes de integração reais.
+- **Task**: A etapa seria responsável por testar endpoints HTTP com `WebApplicationFactory` e SQLite em memória.
+- **Action**: Etapa foi documentada e deixada para uma possível iteração futura.
+- **Result**: Planejada, porém não implementada.
+
+---
+
+## [1.14.0]
+
+### refactor: ajustes finais de arquitetura, naming e validações nas operações bancárias
+
+- **Situation**: O código de movimentação e consulta de saldo estava funcional, mas ainda havia pontos de melhoria relacionados a naming, tratamento de exceções e responsabilidades claras.
+- **Task**: Refatorar os handlers e o controller para aplicar Clean Code, encapsular regras de negócio e reduzir redundâncias.
+- **Action**:
+  - Renomeado `conn` para `connection` em todos os usos.
+  - Separadas exceções de negócio com uma nova exceção `BusinessException`, contendo `code` e `mensagem`, para uso no controller.
+  - Removidas validações duplicadas que já existiam via atributos (ex: tipo de movimento com `[RegularExpression]`).
+  - Padronizado o uso de `DateTime.UtcNow` em vez de `DateTime.Now` para evitar problemas de fuso horário.
+  - Controller passou a tratar `BusinessException` separadamente, retornando HTTP 400 com tipo e mensagem específicos.
+- **Result**: Código mais limpo, testável e aderente a boas práticas de arquitetura com responsabilidade bem definida para cada camada.
+
+---
+
+## [1.15.0]
+
+### refactor: adiciona BusinessException para padronizar regras de negócio
+
+- **Situation**: Os erros de regra de negócio estavam sendo lançados via `Exception` simples, o que dificultava tratamento no controller e não distinguia falhas esperadas de falhas técnicas.
+- **Task**: Criar uma exceção customizada `BusinessException` com `Code` e `Message`, e aplicar nas regras como conta inexistente, inativa, valores inválidos, etc.
+- **Action**:
+  - Criada classe `BusinessException` em `Domain.Exceptions`.
+  - Substituídas todas as `throw new Exception("CODE")` por `throw new BusinessException("CODE", "mensagem explicativa")`.
+  - Ajustado o controller para tratar `BusinessException` como `BadRequest (400)` e retornar o tipo e a mensagem.
+- **Result**: Fluxo de erros mais claro, padronizado, com retorno estruturado e diferenciação entre erro de negócio e erro de sistema.
+
+---
+
+## [1.16.0]
+
+### docs: finaliza README principal e vincula documentação detalhada da Questão 5
+
+- **Situation**: A solução já contava com um `README.md` técnico geral e um `README.md` completo para a Questão 5, mas faltava conectá-los de forma estruturada.
+- **Task**: Atualizar o `README` principal para orientar o leitor sobre como acessar os detalhes da API da Questão 5, mantendo a documentação modular e organizada.
+- **Action**: Adicionada uma nova seção “📂 Detalhamento das Questões” no `README.md` principal com link direto para `Questao5/README.md`.
+- **Result**: Estrutura de documentação finalizada, com orientação clara sobre como executar, testar e consultar cada projeto da solução. Pronto para entrega técnica.
+
+---

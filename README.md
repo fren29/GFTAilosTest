@@ -59,3 +59,9 @@ dotnet test
 ## 📋 Histórico de Commits
 
 Veja o histórico completo no [CHANGELOG.md](./CHANGELOG.md)
+
+## 📂 Detalhamento das Questões
+
+Para mais detalhes sobre cada questão, consulte o README específico de cada projeto.
+
+📌 [Detalhes da API da Questão 5](./Questao5/README.md)
