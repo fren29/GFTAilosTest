@@ -175,3 +175,13 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 
 ---
 
+## [1.9.0]
+
+### feat: implementa movimentação de conta com validações e idempotência
+
+- **Situation**: A empresa solicitou a criação de um serviço REST para registrar movimentações (crédito e débito) em contas correntes já existentes, com suporte à idempotência e validações de negócio.
+- **Task**: Implementar um endpoint POST capaz de receber um comando de movimentação, validar os dados conforme as regras fornecidas e persistir o movimento no banco SQLite.
+- **Action**: Criado `MovimentarContaCommand` e `MovimentarContaHandler` seguindo o padrão CQRS. Foram implementadas as validações: conta existente, ativa, valor positivo e tipo válido. Adicionado controle de idempotência com registro de requisições únicas. Endpoint implementado em `ContaCorrenteController` via Minimal API convertida para `Controller`.
+- **Result**: Serviço de movimentação funcional com controle de duplicidade, pronto para integração com o app da empresa. Arquitetura segue o padrão utilizado pela organização (CQRS + Dapper + Controller).
+
+---
