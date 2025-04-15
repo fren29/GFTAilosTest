@@ -196,3 +196,18 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: Serviço funcional que retorna saldo atualizado com base nas movimentações, incluindo nome do titular e data/hora da consulta. Endpoint devidamente validado com mensagens de erro específicas.
 
 ---
+
+## [1.11.0]
+
+### test: estabiliza e corrige testes de movimentação e saldo de contas
+
+- **Situation**: Durante a execução dos testes unitários, surgiam falhas causadas por uso incorreto do banco SQLite em memória. Os testes duplicavam schema, não reutilizavam conexões e quebravam por ausência de tabelas.
+- **Task**: Corrigir o uso do banco em memória, evitar duplicidade de classes, remover ambiguidades e garantir que o schema esteja sempre ativo durante os testes.
+- **Action**: 
+  - Criado método `InitializeDatabaseWithSchemaAndKeepOpen` no helper.
+  - Atualizados os testes para manter uma única conexão viva durante a execução.
+  - Removidas duplicidades de classes e conflitos de nomes nos testes.
+  - Reorganizados arquivos para seguir boas práticas de Clean Code.
+- **Result**: Todos os testes executam com sucesso, usando uma base de dados consistente e reaproveitada. A cobertura reflete corretamente os comportamentos esperados da aplicação.
+
+---

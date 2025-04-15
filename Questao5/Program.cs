@@ -33,20 +33,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapPost("/movimentacao", async (IMediator mediator, MovimentarContaCommand command) =>
-{
-    try
-    {
-        var result = await mediator.Send(command);
-        return Results.Ok(result);
-    }
-    catch (Exception ex)
-    {
-        return Results.BadRequest(new { erro = ex.Message });
-    }
-});
-
-
 // sqlite
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
 app.Services.GetService<IDatabaseBootstrap>().Setup();

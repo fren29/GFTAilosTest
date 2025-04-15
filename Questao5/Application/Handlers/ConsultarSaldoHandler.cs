@@ -21,19 +21,20 @@ public class ConsultarSaldoHandler : IRequestHandler<ConsultarSaldoQuery, Consul
 
         var conta = await connection.QueryFirstOrDefaultAsync<(int Numero, string Nome, bool Ativa)>(
             "SELECT numero, nome, ativo FROM contacorrente WHERE idcontacorrente = @id",
-            new { id = request.IdContaCorrente });
+            new { id = request.IdContaCorrente.ToString() });
 
-        if (conta.Numero == 0)
+        if (conta == default)
             throw new Exception("INVALID_ACCOUNT");
 
         if (!conta.Ativa)
             throw new Exception("INACTIVE_ACCOUNT");
 
-        var creditos = await connection.ExecuteScalarAsync<decimal?>(
+        // Ensure creditos and debitos are calculated even if there are no movements
+        var creditos = await connection.ExecuteScalarAsync<decimal>(
             "SELECT COALESCE(SUM(valor), 0) FROM movimento WHERE idcontacorrente = @id AND tipomovimento = 'C'",
             new { id = request.IdContaCorrente });
 
-        var debitos = await connection.ExecuteScalarAsync<decimal?>(
+        var debitos = await connection.ExecuteScalarAsync<decimal>(
             "SELECT COALESCE(SUM(valor), 0) FROM movimento WHERE idcontacorrente = @id AND tipomovimento = 'D'",
             new { id = request.IdContaCorrente });
 
@@ -42,7 +43,9 @@ public class ConsultarSaldoHandler : IRequestHandler<ConsultarSaldoQuery, Consul
             NumeroConta = conta.Numero,
             NomeTitular = conta.Nome,
             DataConsulta = DateTime.Now,
-            Saldo = (creditos ?? 0) - (debitos ?? 0)
+            Saldo = creditos - debitos // This will correctly return 0 if there are no movements
         };
     }
+
+
 }

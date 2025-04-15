@@ -23,7 +23,7 @@ public class MovimentarContaHandler : IRequestHandler<MovimentarContaCommand, Mo
 
         var idempotente = await connection.QueryFirstOrDefaultAsync<string>(
             "SELECT resultado FROM idempotencia WHERE chave_idempotencia = @id",
-            new { id = request.IdRequisicao });
+            new { id = request.IdRequisicao.ToString() });
 
         if (!string.IsNullOrEmpty(idempotente))
         {
@@ -32,9 +32,9 @@ public class MovimentarContaHandler : IRequestHandler<MovimentarContaCommand, Mo
 
         var conta = await connection.QueryFirstOrDefaultAsync<(string Id, bool Ativa)>(
             "SELECT idcontacorrente as Id, ativo as Ativa FROM contacorrente WHERE idcontacorrente = @id",
-            new { id = request.IdContaCorrente });
+            new { id = request.IdContaCorrente.ToString() });
 
-        if (conta.Id == null)
+        if (conta == default)
             throw new Exception("INVALID_ACCOUNT");
 
         if (!conta.Ativa)
