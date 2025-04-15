@@ -3,20 +3,56 @@
   "WorkspaceRootPath": "D:\\Projects\\GFTAilosTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.sides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.sides.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\golsportimeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao2\\golsportimeservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|d:\\projects\\gftailostest\\questao2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|solutionrelative:questao2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.errors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.errors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\helpers\\httpclientmockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\helpers\\httpclientmockhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|d:\\projects\\gftailostest\\questao2\\services\\golsportimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|solutionrelative:questao2\\services\\golsportimeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|d:\\projects\\gftailostest\\questao2\\dtos\\matchdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|solutionrelative:questao2\\dtos\\matchdatum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|d:\\projects\\gftailostest\\questao2\\dtos\\matchapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FDF016F-9506-422A-B4CA-E9A401FDDC34}|Questao2\\Questao2.csproj|solutionrelative:questao2\\dtos\\matchapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\helpers\\httpclientmockfootballhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\helpers\\httpclientmockfootballhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao1\\contabancariatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\questao1\\contabancariatests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|d:\\projects\\gftailostest\\questao1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,6 +61,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|d:\\projects\\gftailostest\\questao1\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{24C20B4F-3D90-45C4-84F6-49CBB46DDDB4}|Questao1\\Questao1.csproj|solutionrelative:questao1\\contabancaria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\questao5.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\infrastructure\\services\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\exercicio.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,76 +86,227 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "MatchDatum.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao2\\DTOs\\MatchDatum.cs",
+              "RelativeDocumentMoniker": "Questao2\\DTOs\\MatchDatum.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao2\\DTOs\\MatchDatum.cs",
+              "RelativeToolTip": "Questao2\\DTOs\\MatchDatum.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T02:40:41.794Z",
+              "WhenOpened": "2025-04-14T05:30:15.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GolsPorTimeServiceTestsData.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:29:52.513Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Questao5",
-              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
-              "RelativeDocumentMoniker": "Questao5\\Questao5.csproj",
-              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
-              "RelativeToolTip": "Questao5\\Questao5.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-14T01:52:48.935Z",
+              "Title": "GolsPorTimeServiceTests.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T03:27:39.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GolsPorTimeService.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao2\\Services\\GolsPorTimeService.cs",
+              "RelativeDocumentMoniker": "Questao2\\Services\\GolsPorTimeService.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao2\\Services\\GolsPorTimeService.cs",
+              "RelativeToolTip": "Questao2\\Services\\GolsPorTimeService.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwCAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:54:07.097Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Exercicio.Tests",
-              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
-              "RelativeDocumentMoniker": "Exercicio.Tests\\Exercicio.Tests.csproj",
-              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
-              "RelativeToolTip": "Exercicio.Tests\\Exercicio.Tests.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-04-14T01:48:33.937Z",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao2\\Program.cs",
+              "RelativeDocumentMoniker": "Questao2\\Program.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao2\\Program.cs",
+              "RelativeToolTip": "Questao2\\Program.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:48:53.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HttpClientMockFootballHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-15T08:46:38.917Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GolsPorTimeServiceTestsData.Sides.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Sides.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Sides.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Sides.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Sides.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB8AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:39:52.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HttpClientMockHelper.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Helpers\\HttpClientMockHelper.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Helpers\\HttpClientMockHelper.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Helpers\\HttpClientMockHelper.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Helpers\\HttpClientMockHelper.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAUwBwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:23:39.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "GolsPorTimeServiceTestsData.Errors.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Errors.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Errors.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Errors.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Errors.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAArwBkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:38:51.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GolsPorTimeServiceTestsData.Pagination.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Pagination.cs",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Pagination.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Pagination.cs",
+              "RelativeToolTip": "Exercicio.Tests\\Questao2\\Data\\GolsPorTimeServiceTestsData.Pagination.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAjwCMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T06:36:57.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MatchApiResponse.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao2\\DTOs\\MatchApiResponse.cs",
+              "RelativeDocumentMoniker": "Questao2\\DTOs\\MatchApiResponse.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao2\\DTOs\\MatchApiResponse.cs",
+              "RelativeToolTip": "Questao2\\DTOs\\MatchApiResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:31:19.256Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "ContaBancariaTests.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
               "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
               "RelativeToolTip": "Exercicio.Tests\\Questao1\\ContaBancariaTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAIwAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T01:44:38.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Program.cs",
+              "RelativeDocumentMoniker": "Questao5\\Program.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Program.cs",
+              "RelativeToolTip": "Questao5\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T05:41:33.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Questao5\\Infrastructure\\Services\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:40:41.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Questao5.csproj",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
+              "RelativeDocumentMoniker": "Questao5\\Questao5.csproj",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Questao5.csproj",
+              "RelativeToolTip": "Questao5\\Questao5.csproj",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T01:52:48.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Exercicio.Tests.csproj",
+              "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
+              "RelativeDocumentMoniker": "Exercicio.Tests\\Exercicio.Tests.csproj",
+              "ToolTip": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Exercicio.Tests.csproj",
+              "RelativeToolTip": "Exercicio.Tests\\Exercicio.Tests.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T01:48:33.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao1\\Program.cs",
               "RelativeDocumentMoniker": "Questao1\\Program.cs",
               "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao1\\Program.cs",
               "RelativeToolTip": "Questao1\\Program.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAkwC0AAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:41:43.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T01:41:43.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\UnitTest1.cs",
@@ -115,12 +314,11 @@
               "RelativeToolTip": "Exercicio.Tests\\UnitTest1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:14:51.858Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-14T01:14:51.858Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "ContaBancaria.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao1\\ContaBancaria.cs",
               "RelativeDocumentMoniker": "Questao1\\ContaBancaria.cs",
@@ -128,8 +326,7 @@
               "RelativeToolTip": "Questao1\\ContaBancaria.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAIwCEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-11T20:20:32.187Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T20:20:32.187Z"
             }
           ]
         }

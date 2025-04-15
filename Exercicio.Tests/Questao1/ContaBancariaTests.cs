@@ -2,7 +2,7 @@
 using Xunit;
 using FluentAssertions;
 
-namespace Tests.Questao1
+namespace Exercicio.Tests.Questao1
 {
     public class ContaBancariaTests
     {
