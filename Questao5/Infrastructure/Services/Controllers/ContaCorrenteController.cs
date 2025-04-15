@@ -5,6 +5,7 @@ using Questao5.Infrastructure.Database.CommandStore.Requests;
 using Questao5.Infrastructure.Database.CommandStore.Responses;
 using Swashbuckle.AspNetCore.Annotations;
 using Questao5.Infrastructure.Database.QueryStore.Responses;
+using Questao5.Domain.Exceptions;
 
 namespace Questao5.Infrastructure.Services.Controllers;
 
@@ -59,9 +60,10 @@ public class ContaCorrenteController : ControllerBase
             var result = await _mediator.Send(query);
             return Ok(result);
         }
-        catch (Exception ex)
+        catch (Exception)
         {
-            return BadRequest(new { erro = ex.Message });
+            return StatusCode(500, new { tipo = "INTERNAL_ERROR", mensagem = "Ocorreu um erro inesperado." });
         }
+
     }
 }

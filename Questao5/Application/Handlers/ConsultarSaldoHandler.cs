@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using MediatR;
+using Questao5.Domain.Exceptions;
 using Questao5.Infrastructure.Database.QueryStore.Requests;
 using Questao5.Infrastructure.Database.QueryStore.Responses;
 using Questao5.Infrastructure.Sqlite;
@@ -24,12 +25,11 @@ public class ConsultarSaldoHandler : IRequestHandler<ConsultarSaldoQuery, Consul
             new { id = request.IdContaCorrente.ToString() });
 
         if (conta == default)
-            throw new Exception("INVALID_ACCOUNT");
+            throw new BusinessException("INVALID_ACCOUNT", "Conta Corrente não encontrada.");
 
         if (!conta.Ativa)
-            throw new Exception("INACTIVE_ACCOUNT");
+            throw new BusinessException("INACTIVE_ACCOUNT", "Conta Inativa");
 
-        // Ensure creditos and debitos are calculated even if there are no movements
         var creditos = await connection.ExecuteScalarAsync<decimal>(
             "SELECT COALESCE(SUM(valor), 0) FROM movimento WHERE idcontacorrente = @id AND tipomovimento = 'C'",
             new { id = request.IdContaCorrente });
@@ -42,8 +42,8 @@ public class ConsultarSaldoHandler : IRequestHandler<ConsultarSaldoQuery, Consul
         {
             NumeroConta = conta.Numero,
             NomeTitular = conta.Nome,
-            DataConsulta = DateTime.Now,
-            Saldo = creditos - debitos // This will correctly return 0 if there are no movements
+            DataConsulta = DateTime.UtcNow,
+            Saldo = creditos - debitos
         };
     }
 

@@ -5,6 +5,7 @@ using System.Globalization;
 using Questao5.Infrastructure.Database.CommandStore.Requests;
 using Questao5.Infrastructure.Database.CommandStore.Responses;
 using Microsoft.Data.Sqlite;
+using Questao5.Domain.Exceptions;
 
 namespace Questao5.Application.Handlers;
 
@@ -19,7 +20,7 @@ public class MovimentarContaHandler : IRequestHandler<MovimentarContaCommand, Mo
 
     public async Task<MovimentarContaResult> Handle(MovimentarContaCommand request, CancellationToken cancellationToken)
     {
-        using var connection = new SqliteConnection(_config.Name);
+        using SqliteConnection connection = new(_config.Name);
 
         var idempotente = await connection.QueryFirstOrDefaultAsync<string>(
             "SELECT resultado FROM idempotencia WHERE chave_idempotencia = @id",
@@ -35,16 +36,16 @@ public class MovimentarContaHandler : IRequestHandler<MovimentarContaCommand, Mo
             new { id = request.IdContaCorrente.ToString() });
 
         if (conta == default)
-            throw new Exception("INVALID_ACCOUNT");
+            throw new BusinessException("INVALID_ACCOUNT", "Conta Corrente não encontrada.");
 
         if (!conta.Ativa)
-            throw new Exception("INACTIVE_ACCOUNT");
+            throw new BusinessException("INACTIVE_ACCOUNT", "Conta Corrente inativa.");
 
         if (request.Valor <= 0)
-            throw new Exception("INVALID_VALUE");
+            throw new BusinessException("INVALID_VALUE", "Saldo insulficiente");
 
         if (request.TipoMovimento != "C" && request.TipoMovimento != "D")
-            throw new Exception("INVALID_TYPE");
+            throw new BusinessException("INVALID_TYPE", "Sem suporte para este tipo de operação");
 
         var idMovimento = Guid.NewGuid();
         var data = DateTime.Now.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);

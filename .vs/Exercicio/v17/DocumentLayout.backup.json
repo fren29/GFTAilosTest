@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Projects\\GFTAilosTest\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\infrastructure\\services\\controllers\\contacorrentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\infrastructure\\services\\controllers\\contacorrentecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -53,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|solutionrelative:exercicio.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|d:\\projects\\gftailostest\\questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7B665AB7-6063-4EA5-A851-E41DBBE01242}|Questao5\\Questao5.csproj|solutionrelative:questao5\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{40B9A8E1-BE9A-4DA7-BE9C-CDACCF63894A}|Exercicio.Tests\\Exercicio.Tests.csproj|d:\\projects\\gftailostest\\exercicio.tests\\questao2\\data\\golsportimeservicetestsdata.pagination.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,11 +122,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\UnitTest1.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\UnitTest1.cs",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ConsultarSaldoHandler.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Application\\Handlers\\ConsultarSaldoHandler.cs",
               "RelativeDocumentMoniker": "Questao5\\Application\\Handlers\\ConsultarSaldoHandler.cs",
@@ -152,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MovimentarContaHandler.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Application\\Handlers\\MovimentarContaHandler.cs",
               "RelativeDocumentMoniker": "Questao5\\Application\\Handlers\\MovimentarContaHandler.cs",
@@ -165,20 +165,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ContaCorrenteController.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\ContaCorrenteController.cs",
               "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Services\\Controllers\\ContaCorrenteController.cs",
               "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Services\\Controllers\\ContaCorrenteController.cs",
               "RelativeToolTip": "Questao5\\Infrastructure\\Services\\Controllers\\ContaCorrenteController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBoAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwB4AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T02:40:41.794Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MovimentarContaResult.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Database\\CommandStore\\Responses\\MovimentarContaResult.cs",
               "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Database\\CommandStore\\Responses\\MovimentarContaResult.cs",
@@ -191,7 +191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ConsultarSaldoResult.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Database\\QueryStore\\Responses\\ConsultarSaldoResult.cs",
               "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Database\\QueryStore\\Responses\\ConsultarSaldoResult.cs",
@@ -204,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MovimentarContaCommand.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Database\\CommandStore\\Requests\\MovimentarContaCommand.cs",
               "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Database\\CommandStore\\Requests\\MovimentarContaCommand.cs",
@@ -217,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TestDatabaseHelper.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao5\\Data\\TestDatabaseHelper.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Questao5\\Data\\TestDatabaseHelper.cs",
@@ -230,20 +230,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Program.cs",
               "RelativeDocumentMoniker": "Questao5\\Program.cs",
               "ToolTip": "D:\\Projects\\GFTAilosTest\\Questao5\\Program.cs",
               "RelativeToolTip": "Questao5\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowBUAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T05:41:33.953Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ConsultarSaldoQuery.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Questao5\\Infrastructure\\Database\\QueryStore\\Requests\\ConsultarSaldoQuery.cs",
               "RelativeDocumentMoniker": "Questao5\\Infrastructure\\Database\\QueryStore\\Requests\\ConsultarSaldoQuery.cs",
@@ -256,7 +256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ConsultarSaldoHandlerTests.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao5\\Handlers\\ConsultarSaldoHandlerTests.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Questao5\\Handlers\\ConsultarSaldoHandlerTests.cs",
@@ -269,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MovimentarContaHandlerTests.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao5\\Handlers\\MovimentarContaHandlerTests.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Questao5\\Handlers\\MovimentarContaHandlerTests.cs",
@@ -295,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "GolsPorTimeServiceTests.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Questao2\\GolsPorTimeServiceTests.cs",
@@ -308,7 +308,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "HttpClientMockFootballHelper.cs",
               "DocumentMoniker": "D:\\Projects\\GFTAilosTest\\Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",
               "RelativeDocumentMoniker": "Exercicio.Tests\\Helpers\\HttpClientMockFootballHelper.cs",

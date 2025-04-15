@@ -226,3 +226,45 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: A documentação Swagger agora apresenta parâmetros com validações visuais, exemplos claros de uso e estrutura de resposta esperada, tornando a API mais confiável e profissional para terceiros.
 
 ---
+
+## [1.13.0] (skipped)
+
+### skipped: testes de integração planejados, mas omitidos por estratégia de entrega
+
+- **Situation**: A entrega estava em fase final e o prazo apertado inviabilizou a adição de testes de integração reais.
+- **Task**: A etapa seria responsável por testar endpoints HTTP com `WebApplicationFactory` e SQLite em memória.
+- **Action**: Etapa foi documentada e deixada para uma possível iteração futura.
+- **Result**: Planejada, porém não implementada.
+
+---
+
+## [1.14.0]
+
+### refactor: ajustes finais de arquitetura, naming e validações nas operações bancárias
+
+- **Situation**: O código de movimentação e consulta de saldo estava funcional, mas ainda havia pontos de melhoria relacionados a naming, tratamento de exceções e responsabilidades claras.
+- **Task**: Refatorar os handlers e o controller para aplicar Clean Code, encapsular regras de negócio e reduzir redundâncias.
+- **Action**:
+  - Renomeado `conn` para `connection` em todos os usos.
+  - Separadas exceções de negócio com uma nova exceção `BusinessException`, contendo `code` e `mensagem`, para uso no controller.
+  - Removidas validações duplicadas que já existiam via atributos (ex: tipo de movimento com `[RegularExpression]`).
+  - Padronizado o uso de `DateTime.UtcNow` em vez de `DateTime.Now` para evitar problemas de fuso horário.
+  - Controller passou a tratar `BusinessException` separadamente, retornando HTTP 400 com tipo e mensagem específicos.
+- **Result**: Código mais limpo, testável e aderente a boas práticas de arquitetura com responsabilidade bem definida para cada camada.
+
+---
+
+## [1.15.0]
+
+### refactor: adiciona BusinessException para padronizar regras de negócio
+
+- **Situation**: Os erros de regra de negócio estavam sendo lançados via `Exception` simples, o que dificultava tratamento no controller e não distinguia falhas esperadas de falhas técnicas.
+- **Task**: Criar uma exceção customizada `BusinessException` com `Code` e `Message`, e aplicar nas regras como conta inexistente, inativa, valores inválidos, etc.
+- **Action**:
+  - Criada classe `BusinessException` em `Domain.Exceptions`.
+  - Substituídas todas as `throw new Exception("CODE")` por `throw new BusinessException("CODE", "mensagem explicativa")`.
+  - Ajustado o controller para tratar `BusinessException` como `BadRequest (400)` e retornar o tipo e a mensagem.
+- **Result**: Fluxo de erros mais claro, padronizado, com retorno estruturado e diferenciação entre erro de negócio e erro de sistema.
+
+---
+
