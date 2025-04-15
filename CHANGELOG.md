@@ -185,3 +185,14 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: Serviço de movimentação funcional com controle de duplicidade, pronto para integração com o app da empresa. Arquitetura segue o padrão utilizado pela organização (CQRS + Dapper + Controller).
 
 ---
+
+## [1.10.0]
+
+### feat: implementa consulta de saldo com validações e agregação por movimentos
+
+- **Situation**: A empresa solicitou a criação de um endpoint para consulta de saldo da conta corrente, baseado nas movimentações de crédito e débito previamente registradas.
+- **Task**: Implementar um endpoint GET que recebe a identificação da conta corrente, valida as regras de negócio, calcula o saldo e retorna os dados do titular e o valor atual.
+- **Action**: Criados `ConsultarSaldoQuery` e `ConsultarSaldoHandler` seguindo o padrão CQRS. O handler valida se a conta existe e está ativa, busca as somas de créditos e débitos via Dapper e retorna o saldo. Foi adicionado o endpoint `GET /contacorrente/saldo/{id}` no `ContaCorrenteController`.
+- **Result**: Serviço funcional que retorna saldo atualizado com base nas movimentações, incluindo nome do titular e data/hora da consulta. Endpoint devidamente validado com mensagens de erro específicas.
+
+---
