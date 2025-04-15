@@ -162,5 +162,16 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Action**: Analisada a sequência de comandos passo a passo, removendo o `default.html` no commit 2 e mantendo `style.css` em `master`. O arquivo `script.js`, criado na branch `testing`, não aparece ao voltar para `master`. A análise foi testada usando comandos `echo` no terminal para simular os efeitos.
 - **Result**: Determinada com precisão que o único arquivo restante (além do `README.md`) é `style.css`. Questão 3 finalizada com confiança e validada via terminal.
 
+---
+
+## [1.8.0]
+
+### feat: implementa consulta SQL da Questão 4 para agrupar e filtrar atendimentos
+
+- **Situation**: A Questão 4 exige uma consulta SQL que agrupe os atendimentos por assunto e ano, contabilize as ocorrências e filtre somente os que têm mais de 3 registros por ano.
+- **Task**: Construir um `SELECT` com `GROUP BY`, `HAVING` e `ORDER BY` para trazer apenas as combinações válidas ordenadas por ano e quantidade de forma decrescente.
+- **Action**: Criada a query com `COUNT(*)`, agrupamento por `ASSUNTO` e `ANO`, cláusula `HAVING COUNT(*) > 3` e ordenação por `ANO DESC, QUANTIDADE DESC`. A consulta foi validada com os dados fornecidos e retorna exatamente os registros esperados.
+- **Result**: Consulta implementada com sucesso, entregando o resultado esperado com performance e clareza sintática.
 
 ---
+
