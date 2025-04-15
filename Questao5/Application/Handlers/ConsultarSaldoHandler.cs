@@ -1,7 +1,7 @@
 ﻿using Dapper;
 using MediatR;
-using Questao5.Application.Queries.Requests;
-using Questao5.Application.Queries.Responses;
+using Questao5.Infrastructure.Database.QueryStore.Requests;
+using Questao5.Infrastructure.Database.QueryStore.Responses;
 using Questao5.Infrastructure.Sqlite;
 
 namespace Questao5.Application.Handlers;

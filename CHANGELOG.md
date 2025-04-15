@@ -211,3 +211,18 @@ Utiliza versionamento semântico com incremento de **minor version** para cada c
 - **Result**: Todos os testes executam com sucesso, usando uma base de dados consistente e reaproveitada. A cobertura reflete corretamente os comportamentos esperados da aplicação.
 
 ---
+
+## [1.12.0]
+
+### docs: completa documentação Swagger com exemplos, validações e mapeamentos
+
+- **Situation**: O projeto já contava com Swagger habilitado, mas a documentação dos endpoints estava incompleta, sem descrições, exemplos, ou mapeamentos formais de retorno e erros.
+- **Task**: Aprimorar a documentação para tornar os endpoints mais compreensíveis e utilizáveis por consumidores externos, seguindo boas práticas exigidas pela empresa.
+- **Action**:
+  - Adicionados `[SwaggerSchema]` e `[Required]` nos DTOs `MovimentarContaCommand`, `MovimentarContaResult` e `ConsultarSaldoResult`.
+  - Inseridas validações com `Range`, `RegularExpression` e mensagens de erro personalizadas nos inputs.
+  - Adicionados `[ProducesResponseType]` para mapear corretamente status 200 e 400.
+  - Acrescentados `summary` e `description` com `[SwaggerOperation]` nos endpoints.
+- **Result**: A documentação Swagger agora apresenta parâmetros com validações visuais, exemplos claros de uso e estrutura de resposta esperada, tornando a API mais confiável e profissional para terceiros.
+
+---

@@ -1,9 +1,9 @@
 ﻿using FluentAssertions;
 using Questao5.Application.Handlers;
 using Questao5.Infrastructure.Sqlite;
-using Questao5.Application.Queries.Requests;
 using Microsoft.Data.Sqlite;
 using Exercicio.Tests.Questao5.Data;
+using Questao5.Infrastructure.Database.QueryStore.Requests;
 
 namespace Exercicio.Tests.Questao5.Handlers;
 public class ConsultarSaldoHandlerTests
